@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #263F73;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.RemoveEventOrganizerController">
+    <children>
+        <TableView fx:id="organizerTable" layoutX="-7.0" layoutY="35.0" prefHeight="213.0" prefWidth="706.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="colOrganizerID" prefWidth="100" text="Organizer ID" />
+                <TableColumn fx:id="colOrganizerName" prefWidth="200" text="Organizer Name" />
+                <TableColumn fx:id="colEventID" prefWidth="100" text="Event ID" />
+                <TableColumn fx:id="colEventName" prefWidth="200" text="Event Name" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="219.0" layoutY="3.0" text="REMOVE EVENT ORGANIZER" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="266.0" text="SELECT ORGANIZER ID TO REMOVE" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="oldorgid" layoutX="277.0" layoutY="261.0" prefHeight="31.0" prefWidth="117.0" />
+        <Button fx:id="applychanges" layoutX="217.0" layoutY="354.0" mnemonicParsing="false" onAction="#buttonpress" prefHeight="32.0" prefWidth="237.0" style="-fx-background-color: red;" text="REMOVE ORGANIZER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+      <Label layoutX="14.0" layoutY="318.0" text="ASSIGN NEW ORGANIZER ID" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="neworgid" layoutX="277.0" layoutY="313.0" prefHeight="31.0" prefWidth="117.0" />
+      <Button layoutX="23.0" layoutY="1.0" mnemonicParsing="false" onAction="#Refresh" style="-fx-background-color: #a2a0a0;" text="RELOAD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

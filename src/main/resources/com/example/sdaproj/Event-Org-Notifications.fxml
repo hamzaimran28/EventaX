@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #263F73;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.EventOrgNotifications">
+    <children>
+        <TableView fx:id="Table" layoutY="55.0" prefHeight="254.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="userID" minWidth="0.0" prefWidth="56.666685700416565" text="User ID" />
+                <TableColumn fx:id="message" prefWidth="264.66663360595703" text="Message" />
+                <TableColumn fx:id="type" prefWidth="122.66668701171875" text="Type" />
+                <TableColumn fx:id="date" prefWidth="103.99996948242188" text="Date" />
+                <TableColumn fx:id="evId" prefWidth="50.0" text="Event ID" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <Label layoutX="293.0" layoutY="14.0" text="NOTIFICATIONS" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+      <Button layoutX="306.0" layoutY="337.0" mnemonicParsing="false" onAction="#displayNotificationsButtonOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #a2a0a0;" text="REFRESH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

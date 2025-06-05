@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.GenerateEventAnalysisController">
+    <children>
+        <AnchorPane layoutY="316.0" prefHeight="83.0" prefWidth="700.0" style="-fx-background-color: #2A3663;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="316.0">
+            <children>
+                <Label layoutX="636.0" layoutY="5.0" text="EventaX " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="653.0" layoutY="22.0" text="By" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="632.0" layoutY="42.0" text="Aetherion" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            <Button fx:id="gen" layoutX="312.0" layoutY="18.0" mnemonicParsing="false" onAction="#Generate" style="-fx-background-color: #a2a0a0;" text="GENERATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <TableView fx:id="Table" layoutY="82.0" prefHeight="235.0" prefWidth="700.0" AnchorPane.bottomAnchor="82.66666666666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+        <columns>
+            <TableColumn fx:id="EvID" prefWidth="60" text="Event ID" />
+            <TableColumn fx:id="EvName" prefWidth="130" text="Event Name" />
+            <TableColumn fx:id="EvDate" prefWidth="130" text="Event Date" />
+            <TableColumn fx:id="EvVenue" prefWidth="130" text="Event Venue" />
+            <TableColumn fx:id="EvTickets" prefWidth="130" text="Tickets Sold" />
+            <TableColumn fx:id="EvRating" prefWidth="130" text="Avg Rating" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="83.0" prefWidth="700.0" style="-fx-background-color: #2A3663;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="229.0" layoutY="15.0" text="Event Analysis" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

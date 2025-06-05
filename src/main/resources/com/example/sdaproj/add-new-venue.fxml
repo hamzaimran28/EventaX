@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.AddNewVenueController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutY="107.0" prefHeight="22.0" prefWidth="230.0" text="EVENTA X" textFill="#fffbfb">
+                    <font>
+                        <Font name="Verdana Bold" size="24.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+                <Label alignment="CENTER" layoutY="156.0" prefHeight="22.0" prefWidth="230.0" text="By Aetherion" textFill="#fffbfb">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+                <Line endX="59.0" endY="-1.52587890625E-5" layoutX="128.0" layoutY="146.0" startX="-84.66665649414062" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="2.0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Line>
+                <Circle fill="#fff7f73f" layoutX="114.0" layoutY="145.0" radius="86.0" stroke="#a69c9c13" strokeType="INSIDE">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Circle>
+                <Label layoutX="86.0" layoutY="304.0" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="30.0" prefWidth="370.0" text="Add new venue" textAlignment="CENTER">
+                    <font>
+                        <Font name="Verdana Bold" size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="84.0" prefHeight="23.0" prefWidth="106.0" text="Venue Name">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="123.0" prefHeight="23.0" prefWidth="79.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameField" layoutX="160.0" layoutY="84.0" />
+                <Button fx:id="AddVenue" layoutX="146.0" layoutY="341.0" mnemonicParsing="false" onAction="#AddVenueOnAction" prefHeight="33.0" prefWidth="111.0" style="-fx-background-color: #263F73;" text="Add Venue" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                    </font>
+                </Button>
+                <ChoiceBox fx:id="myChoiceBox" layoutX="160.0" layoutY="203.0" prefWidth="150.0" />
+                <TextField fx:id="capacityfield" layoutX="160.0" layoutY="163.0" />
+                <TextField fx:id="locationField" layoutX="160.0" layoutY="123.0" />
+
+                <Label layoutX="50.0" layoutY="125.0" prefHeight="23.0" prefWidth="81.0" text="Location">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="165.0" prefHeight="23.0" prefWidth="69.0" text="Capacity">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="69.0" layoutY="203.0" prefHeight="23.0" prefWidth="69.0" text="Type">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                </Label>
+
+                <!-- Additional fields for 'Outdoor' Venue -->
+                <Label fx:id="weatherLabel" layoutX="13.0" layoutY="246.0" prefHeight="21.0" prefWidth="134.0" text="Weather Preparedness" visible="false" />
+                <TextField fx:id="weatherField" layoutX="148.0" layoutY="245.0" visible="false" />
+
+                <Label fx:id="additionalCapacityLabel" layoutX="13.0" layoutY="286.0" prefHeight="21.0" prefWidth="133.0" text="Additional Capacity" visible="false" />
+                <TextField fx:id="additionalCapacityField" layoutX="148.0" layoutY="285.0" visible="false" />
+
+                <!-- Additional fields for 'Indoor' Venue -->
+                <Label fx:id="roomLabel" layoutX="29.0" layoutY="246.0" text="Room Number" visible="false" />
+                <TextField fx:id="roomField" layoutX="148.0" layoutY="245.0" visible="false" />
+
+                <Label fx:id="floorLabel" layoutX="29.0" layoutY="286.0" text="Floor" visible="false" />
+                <TextField fx:id="floorField" layoutX="148.0" layoutY="285.0" visible="false" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

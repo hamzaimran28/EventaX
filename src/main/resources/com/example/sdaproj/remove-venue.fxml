@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #263F73;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.RemoveVenueController">
+    <children>
+        <TableView fx:id="VenueTable" layoutY="48.0" prefHeight="194.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="colVenueId" prefWidth="100.0" text="Venue ID" />
+                <TableColumn fx:id="colVenueName" prefWidth="289.00001525878906" text="Venue Name" />
+                <TableColumn fx:id="colLocation" prefWidth="202.33334350585938" text="Location" />
+                <TableColumn fx:id="colCapacity" minWidth="9.0" prefWidth="106.6666259765625" text="Capacity" />
+            </columns>
+        </TableView>
+        <Label layoutX="259.0" layoutY="14.0" prefHeight="28.0" prefWidth="154.0" text="REMOVE VENUE" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="138.0" layoutY="263.0" text="SELECT VENUE ID" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="eventid" layoutX="277.0" layoutY="253.0" prefHeight="31.0" prefWidth="117.0" />
+        <Button fx:id="applychanges" layoutX="277.0" layoutY="316.0" mnemonicParsing="false" onAction="#buttonpress" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="620.0" layoutY="332.0" text="EventaX " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="637.0" layoutY="350.0" text="By" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="617.0" layoutY="368.0" text="Aetherion" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="14.0" layoutY="252.0" mnemonicParsing="false" onAction="#display" style="-fx-background-color: #a2a0a0;" text="Display Table" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="8.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
